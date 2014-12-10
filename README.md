@@ -1,0 +1,4 @@
+Mickey
+---
+
+`npm install`
