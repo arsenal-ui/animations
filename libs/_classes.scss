@@ -1,0 +1,7 @@
+$anis: flyInToLeft, fadeInDown, fadeFromRight, fadeOutUp;
+
+@each $ani in $anis {
+  .#{$ani} {
+    animation-name: #{$ani};
+  }
+}
