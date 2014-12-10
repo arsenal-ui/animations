@@ -1,4 +1,4 @@
-$anis: flyInToLeft, fadeInDown, fadeFromRight, fadeOutUp;
+$anis: flyInToLeft, fadeInDown, fadeFromRight, fadeOutUp, fadeOutUp;
 
 @each $ani in $anis {
   .#{$ani} {

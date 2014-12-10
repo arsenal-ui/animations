@@ -15,15 +15,20 @@ html {
 
 h1 { font-weight: 300; letter-spacing: 2px; text-transform: uppercase; }
 
+.headline--sub {
+  font: 300 1rem Avenir,sans-serif;
+  letter-spacing: 2px; text-transform: uppercase;
+}
 header {
   background: #d55353;
   color: white;
   padding: 1rem;
 }
 .animation--instance {
-  margin: .5rem auto;
+  margin: 0 auto 1rem;
   width: 100%;
   padding: 1rem;
+  border-top: 8px solid darken(#d55353, 6.25%);
 }
 .block {
   width: 5rem;

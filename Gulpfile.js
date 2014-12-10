@@ -1,5 +1,5 @@
 var gulp     = require('gulp'),
-sass         = require('gulp-ruby-sass'),
+sass         = require('gulp-sass'),
 plumber      = require('gulp-plumber'),
 autoprefixer = require('gulp-autoprefixer'),
 browserSync  = require('browser-sync'),
@@ -13,6 +13,7 @@ gulp.task('styles', function(){
   gulp.src('*.scss')
   .pipe(plumber())
   .pipe(sass({style: 'compressed', "sourcemap=none": true }))
+  .pipe(sass({style: 'compressed'}))
   .pipe(autoprefixer('last 2 version'))
   .pipe(gulp.dest(dist + 'css/'))
   .pipe(reload({stream:true}));
