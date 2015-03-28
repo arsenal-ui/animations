@@ -8,9 +8,8 @@ name         = 'mickey',
 src          = 'src/',
 dist         = 'test/';
 
-
 gulp.task('styles', function(){
-  gulp.src('*.scss')
+  gulp.src('./*.scss')
   .pipe(plumber())
   .pipe(sass({style: 'compressed', "sourcemap=none": true }))
   .pipe(sass({style: 'compressed'}))
@@ -35,7 +34,7 @@ gulp.task('browser-sync', function() {
 
 
 gulp.task('watch', function(){
-  gulp.watch(['*.scss', '**/*.scss'], ['styles']);
+  gulp.watch(['./*.scss', 'partials/**/*.scss', 'libs/**/*.scss'], ['styles']);
   gulp.watch(dist+'*.html', ['html']);
 });
 
