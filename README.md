@@ -1,6 +1,7 @@
-# Animations
+# Mickey.scss
 
-Animations for Arsenal UI (formerly Mickey)
+<a href="https://github.com/charlespeters/VVWIP" align="right">
+  <img src="https://unpkg.com/vvwip/IGVP.svg" align="right" alt="IGVP" />
+</a>
 
-
-`npm install`
+A collection of Sass snippets for CSS animations.

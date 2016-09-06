@@ -1,7 +1,16 @@
+.Animate {
+  animation-duration: $m-length;
+  animation-fill-mode: both;
+}
+
+.Animate--infinite {
+  animation-iteration-count: infinite;
+}
+
 $anis: flyInToLeft, fadeInDown, fadeFromRight, fadeOutUp, fadeOutUp;
 
 @each $ani in $anis {
-  .#{$ani} {
+  .Animate--#{$ani} {
     animation-name: #{$ani};
   }
 }
